@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 flask = "^3.0.1"
 kafka-python = {git = "https://github.com/dpkp/kafka-python.git"}
+pytest = "^7.4.4"
 
 
 [build-system]
