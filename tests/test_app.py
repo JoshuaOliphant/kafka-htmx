@@ -1,10 +1,10 @@
 from unittest.mock import ANY
-from app import create_app
+from kafka_htmx import create_app
 
 
 def test_create_app(mocker):
     # Create a mock KafkaProducer
-    mock_kafka_producer = mocker.patch('app.KafkaProducer')
+    mock_kafka_producer = mocker.patch('kafka_htmx.KafkaProducer')
     mock_producer_instance = mock_kafka_producer.return_value
 
     # Create an instance of the app with a test configuration
